@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public Sprite m_two;
     public Sprite m_one;
 
-    public Sprite presetSprite;
+    private Sprite presetSprite;
 
     public SpriteRenderer sp;
 
