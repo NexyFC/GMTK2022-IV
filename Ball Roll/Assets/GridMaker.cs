@@ -14,11 +14,15 @@ public class GridMaker : MonoBehaviour
     }
     private void GenerateGrid(float Height,float Width)
     {
+        Grid grid = GetComponent<Grid>();
         for (int x = 0; x < Width; x++)
         {
             for (int y = 0; y < Height; y++)
             {
-                Instantiate(Cell, new Vector3(x, y, 0f), Quaternion.identity);
+                Vector3 GridPosition = grid.CellToWorld(new Vector3Int(x, y, 0));
+                GridPosition.x += 0.5f;
+                GridPosition.y += 0.5f;
+                Instantiate(Cell, GridPosition, Quaternion.identity);
             }
         }
     }
