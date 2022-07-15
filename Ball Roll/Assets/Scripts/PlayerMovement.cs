@@ -5,23 +5,34 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Sprite m_six;
+    public Sprite m_five;
+    public Sprite m_four;
+    public Sprite m_three;
+    public Sprite m_two;
+    public Sprite m_one;
+
+    public Sprite presetSprite;
+
     public SpriteRenderer sp;
+
     
     void Update()
     {
+        presetSprite = sp.sprite;
+
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if(sp.sprite == m_six)
+            if(presetSprite == m_six)
             {
-                Debug.Log("Turn to 5");
+                sp.sprite = m_five;
             }
         }
 
         if(Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if (sp.sprite == m_six)
+            if (presetSprite == m_six)
             {
-                Debug.Log("Turn to 2");
+                sp.sprite = m_two;
             }
         }
 
