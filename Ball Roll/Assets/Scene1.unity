@@ -314,6 +314,9 @@ MonoBehaviour:
     m_Bits: 64
   MovePoint: {fileID: 941161161}
   movespeed: 3
+  whatStopsMovement:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!212 &1228062203 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 1067156868575125463, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
@@ -506,7 +509,7 @@ GameObject:
   - component: {fileID: 2051426485}
   - component: {fileID: 2051426484}
   - component: {fileID: 2051426483}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -846,9 +849,13 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 24
     m_Data: {fileID: 11400000, guid: 9ea368172ed179147ad278b1972ee63d, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 24
     m_Data: {fileID: -624757366, guid: dbababb9df8f3ff4793c045bae38b20d, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 24
     m_Data:
