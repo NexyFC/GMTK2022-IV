@@ -30,8 +30,7 @@ public class PlayerMovement1 : MonoBehaviour
                 {
                     MovePoint.transform.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                 }
-            }
-            if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+            }else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
                 if (!Physics2D.OverlapCircle(MovePoint.transform.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, whatStopsMovement))
                 {
