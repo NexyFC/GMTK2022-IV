@@ -26,6 +26,21 @@ public class PlayerMovement : MonoBehaviour
             {
                 sp.sprite = m_five;
             }
+
+            if(presetSprite == m_five)
+            {
+                sp.sprite = m_one;
+            }
+
+            if(presetSprite == m_one)
+            {
+                sp.sprite = m_two;
+            }
+
+            if(presetSprite == m_two)
+            {
+                sp.sprite = m_six;
+            }
         }
 
         if(Input.GetKeyDown(KeyCode.LeftArrow))
@@ -33,6 +48,64 @@ public class PlayerMovement : MonoBehaviour
             if (presetSprite == m_six)
             {
                 sp.sprite = m_two;
+            }
+            if (presetSprite == m_two)
+            {
+                sp.sprite = m_one;
+            }
+
+            if (presetSprite == m_one)
+            {
+                sp.sprite = m_five;
+            }
+
+            if (presetSprite == m_five)
+            {
+                sp.sprite = m_six;
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            if (presetSprite == m_six)
+            {
+                sp.sprite = m_three;
+            }
+            if (presetSprite == m_three)
+            {
+                sp.sprite = m_one;
+            }
+
+            if (presetSprite == m_one)
+            {
+                sp.sprite = m_four;
+            }
+
+            if (presetSprite == m_four)
+            {
+                sp.sprite = m_six;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            if (presetSprite == m_six)
+            {
+                sp.sprite = m_four;
+            }
+            if (presetSprite == m_four)
+            {
+                sp.sprite = m_one;
+            }
+
+            if (presetSprite == m_one)
+            {
+                sp.sprite = m_three;
+            }
+
+            if (presetSprite == m_three)
+            {
+                sp.sprite = m_six;
             }
         }
 

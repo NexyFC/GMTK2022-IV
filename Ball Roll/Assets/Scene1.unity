@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543a84ee46e28fa46bc8cc087384cac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridObject: {fileID: 0}
+  GridObject: {fileID: 156168547}
   gridl:
     serializedVersion: 2
     m_Bits: 64
