@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement1 : MonoBehaviour
 {
     [SerializeField] GameObject GridObject;
+    public LayerMask gridl;
     private Grid grid;
     [SerializeField] GameObject MovePoint;
     [SerializeField] float movespeed = 3f;
@@ -16,9 +17,10 @@ public class PlayerMovement1 : MonoBehaviour
 
     private void Update()
     {
+
         transform.position = Vector3.MoveTowards(transform.position, MovePoint.transform.position, movespeed * Time.deltaTime);
 
-        if(transform.position == MovePoint.transform.position)
+        if (transform.position == MovePoint.transform.position)
         {
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
             {

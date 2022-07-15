@@ -6,6 +6,7 @@ public class GridMaker : MonoBehaviour
 {
     [SerializeField] float GridHeight;
     [SerializeField] float GridWidth;
+    private SpriteRenderer sp;
     [SerializeField] GameObject Cell;
 
     private void Start()
@@ -22,6 +23,10 @@ public class GridMaker : MonoBehaviour
                 Vector3 GridPosition = grid.CellToWorld(new Vector3Int(x, y, 0));
                 GridPosition.x += 0.5f;
                 GridPosition.y += 0.5f;
+
+                sp = Cell.GetComponent<SpriteRenderer>();
+                sp.enabled = !sp.enabled;
+
                 Instantiate(Cell, GridPosition, Quaternion.identity);
             }
         }
