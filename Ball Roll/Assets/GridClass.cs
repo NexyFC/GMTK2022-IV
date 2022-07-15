@@ -14,4 +14,5 @@ public class GridClass : MonoBehaviour
         wall,
         enemy,
     }
+
 }
