@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement1 : MonoBehaviour
 {
-    [SerializeField] GameObject GridObject;
-    public LayerMask gridl;
-    private Grid grid;
     [SerializeField] GameObject MovePoint;
     [SerializeField] float movespeed = 3f;
     public LayerMask whatStopsMovement;
@@ -14,13 +11,12 @@ public class PlayerMovement1 : MonoBehaviour
 
     private void Awake()
     {
-        grid = GridObject.GetComponent<Grid>();
         PM = GetComponent<PlayerMovement>();
     }
 
     private void Update()
     {
-
+       
         transform.position = Vector3.MoveTowards(transform.position, MovePoint.transform.position, movespeed * Time.deltaTime);
 
         if (transform.position == MovePoint.transform.position)
@@ -32,10 +28,10 @@ public class PlayerMovement1 : MonoBehaviour
                     MovePoint.transform.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                     if(Input.GetAxisRaw("Horizontal") > 0f)
                     {
-                        return;
+                        PM.GoRIght();
                     }else if (Input.GetAxisRaw("Horizontal") < 0f)
                     {
-                        //PM.RotateLeft();
+                        PM.GoLeft();
                     }
                 }
             }else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
@@ -44,11 +40,11 @@ public class PlayerMovement1 : MonoBehaviour
                 {
                     if (Input.GetAxisRaw("Vertical") < 0f)
                     {
-                        //PM.RotateDown();
+                        PM.GoDown();
                     }
                     else if (Input.GetAxisRaw("Vertical") > 0f)
                     {
-                        //PM.RotateUp();
+                        PM.GoUp();
                     }
 
                     MovePoint.transform.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);

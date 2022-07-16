@@ -4,20 +4,42 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            Quaternion currentRotation = transform.rotation;
-            Quaternion wantedRotation = Quaternion.Euler(-180, 0, 0);
-            transform.localRotation = Quaternion.RotateTowards(currentRotation, wantedRotation, 10000f * Time.deltaTime);
-        }
+    [SerializeField] Sprite Dice1;
+    [SerializeField] Sprite Dice2;
+    [SerializeField] Sprite Dice3;
+    [SerializeField] Sprite Dice4;
+    [SerializeField] Sprite Dice5;
+    [SerializeField] Sprite Dice6;
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            Quaternion currentRotation = transform.rotation;
-            Quaternion wantedRotation = Quaternion.Euler(180, 0, 0);
-            transform.localRotation = Quaternion.RotateTowards(currentRotation, wantedRotation, 10000f * Time.deltaTime);
-        }
+    private List<Sprite> SpriteList;
+
+    private SpriteRenderer SR;
+
+    private void Awake()
+    {
+        SR = GetComponent<SpriteRenderer>();
+        SpriteList = new List<Sprite>() { Dice1, Dice2, Dice3, Dice4, Dice5, Dice6 };
+    }
+
+    Dice dice = new Dice();
+    public void GoDown()
+    {
+        dice.RollDown();
+        SR.sprite = SpriteList[dice.getValue()-1];
+    }
+    public void GoUp()
+    {
+        dice.RollUp();
+        SR.sprite = SpriteList[dice.getValue() - 1];
+    }
+    public void GoLeft()
+    {
+        dice.RollLeft();
+        SR.sprite = SpriteList[dice.getValue() - 1];
+    }
+    public void GoRIght()
+    {
+        dice.RollRight();
+        SR.sprite = SpriteList[dice.getValue() - 1];
     }
 }
