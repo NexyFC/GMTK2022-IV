@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+<<<<<<< HEAD
     [SerializeField] Sprite Dice1;
     [SerializeField] Sprite Dice2;
     [SerializeField] Sprite Dice3;
@@ -42,4 +43,6 @@ public class PlayerMovement : MonoBehaviour
         dice.RollRight();
         SR.sprite = SpriteList[dice.getValue() - 1];
     }
+=======
+    
 }
