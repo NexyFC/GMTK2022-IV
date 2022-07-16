@@ -51,7 +51,7 @@ public class PlayerMovement1 : MonoBehaviour
                         //PM.RotateUp();
                     }
 
-                    //MovePoint.transform.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                    MovePoint.transform.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                 }
             }
         }
