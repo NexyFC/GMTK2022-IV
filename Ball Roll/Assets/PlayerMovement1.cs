@@ -29,12 +29,8 @@ public class PlayerMovement1 : MonoBehaviour
                     if (Input.GetAxisRaw("Horizontal") > 0f)
                     {
                         PM.GoRIght();
-<<<<<<< HEAD
                     }
                     else if (Input.GetAxisRaw("Horizontal") < 0f)
-=======
-                    }else if (Input.GetAxisRaw("Horizontal") < 0f)
->>>>>>> a694538614990feb1293abe69ce4571f1ce85d96
                     {
                         PM.GoLeft();
                     }
