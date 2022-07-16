@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GridClass : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public enum state
     {
-        
+        empty,
+        background,
+        player,
+        pit,
+        water,
+        wall,
+        enemy,
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
