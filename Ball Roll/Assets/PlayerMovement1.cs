@@ -32,10 +32,10 @@ public class PlayerMovement1 : MonoBehaviour
                     MovePoint.transform.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                     if(Input.GetAxisRaw("Horizontal") > 0f)
                     {
-                        PM.MoveRight();
+                        //.MoveRight();
                     }else if (Input.GetAxisRaw("Horizontal") < 0f)
                     {
-                        PM.MoveLeft();
+                        //PM.MoveLeft();
                     }
                 }
             }else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
@@ -45,10 +45,10 @@ public class PlayerMovement1 : MonoBehaviour
                     MovePoint.transform.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                     if(Input.GetAxisRaw("Vertical") < 0f)
                     {
-                        PM.MoveDown();
+                        PM.RotateDown();
                     }else if (Input.GetAxisRaw("Vertical") > 0f)
                     {
-                        PM.MoveUp();
+                        //PM.MoveUp();
                     }
                 }
             }
