@@ -32,24 +32,26 @@ public class PlayerMovement1 : MonoBehaviour
                     MovePoint.transform.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                     if(Input.GetAxisRaw("Horizontal") > 0f)
                     {
-                        //.MoveRight();
+                        return;
                     }else if (Input.GetAxisRaw("Horizontal") < 0f)
                     {
-                        //PM.MoveLeft();
+                        //PM.RotateLeft();
                     }
                 }
             }else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
                 if (!Physics2D.OverlapCircle(MovePoint.transform.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, whatStopsMovement))
                 {
-                    MovePoint.transform.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
-                    if(Input.GetAxisRaw("Vertical") < 0f)
+                    if (Input.GetAxisRaw("Vertical") < 0f)
                     {
-                        PM.RotateDown();
-                    }else if (Input.GetAxisRaw("Vertical") > 0f)
-                    {
-                        //PM.MoveUp();
+                        //PM.RotateDown();
                     }
+                    else if (Input.GetAxisRaw("Vertical") > 0f)
+                    {
+                        //PM.RotateUp();
+                    }
+
+                    MovePoint.transform.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                 }
             }
         }

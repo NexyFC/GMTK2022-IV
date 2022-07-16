@@ -4,29 +4,20 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private int WhichRotationX=0;
-    private int WhichRotationY = 0;
-    private int WhichRRotationZ = 0;
-
-    public void RotateDown()
+    void Update()
     {
-        transform.Rotate(new Vector3(90f, 0f, 0f));
-        WhichRotationX++;
-        Debug.Log(WhichRotationX);
-        switch (WhichRotationX)
+        if(Input.GetKeyDown(KeyCode.DownArrow))
         {
-            case 1:
-                transform.position += new Vector3(0f, -0.5f, 0f);
-                break;
-            case 2:
-                break;
-            case 3:
-                transform.position += new Vector3(0f, 1f, 0f);
-                break;
-            case 4:
-                transform.position += new Vector3(0f, -0.5f, 0f);
-                WhichRotationX = 0;
-                break;
+            Quaternion currentRotation = transform.rotation;
+            Quaternion wantedRotation = Quaternion.Euler(-180, 0, 0);
+            transform.localRotation = Quaternion.RotateTowards(currentRotation, wantedRotation, 10000f * Time.deltaTime);
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            Quaternion currentRotation = transform.rotation;
+            Quaternion wantedRotation = Quaternion.Euler(180, 0, 0);
+            transform.localRotation = Quaternion.RotateTowards(currentRotation, wantedRotation, 10000f * Time.deltaTime);
         }
     }
 }
