@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a694538614990feb1293abe69ce4571f1ce85d96
     [SerializeField] Sprite Dice1;
     [SerializeField] Sprite Dice2;
     [SerializeField] Sprite Dice3;
@@ -25,7 +29,11 @@ public class PlayerMovement : MonoBehaviour
     public void GoDown()
     {
         dice.RollDown();
+<<<<<<< HEAD
         SR.sprite = SpriteList[dice.getValue() - 1];
+=======
+        SR.sprite = SpriteList[dice.getValue()-1];
+>>>>>>> a694538614990feb1293abe69ce4571f1ce85d96
     }
     public void GoUp()
     {
@@ -42,4 +50,9 @@ public class PlayerMovement : MonoBehaviour
         dice.RollRight();
         SR.sprite = SpriteList[dice.getValue() - 1];
     }
+<<<<<<< HEAD
+=======
+=======
+    
+>>>>>>> a694538614990feb1293abe69ce4571f1ce85d96
 }

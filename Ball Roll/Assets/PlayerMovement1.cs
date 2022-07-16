@@ -16,7 +16,7 @@ public class PlayerMovement1 : MonoBehaviour
 
     private void Update()
     {
-
+       
         transform.position = Vector3.MoveTowards(transform.position, MovePoint.transform.position, movespeed * Time.deltaTime);
 
         if (transform.position == MovePoint.transform.position)
@@ -29,8 +29,12 @@ public class PlayerMovement1 : MonoBehaviour
                     if (Input.GetAxisRaw("Horizontal") > 0f)
                     {
                         PM.GoRIght();
+<<<<<<< HEAD
                     }
                     else if (Input.GetAxisRaw("Horizontal") < 0f)
+=======
+                    }else if (Input.GetAxisRaw("Horizontal") < 0f)
+>>>>>>> a694538614990feb1293abe69ce4571f1ce85d96
                     {
                         PM.GoLeft();
                     }
