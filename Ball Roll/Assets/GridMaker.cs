@@ -20,12 +20,9 @@ public class GridMaker : MonoBehaviour
         {
             for (int y = 0; y < Height; y++)
             {
-                Vector3 GridPosition = grid.CellToWorld(new Vector3Int(x, y, 0));
+                Vector3 GridPosition = grid.CellToWorld(new Vector3Int(x, y));
                 GridPosition.x += 0.5f;
                 GridPosition.y += 0.5f;
-
-                sp = Cell.GetComponent<SpriteRenderer>();
-                sp.enabled = !sp.enabled;
 
                 Instantiate(Cell, GridPosition, Quaternion.identity);
             }

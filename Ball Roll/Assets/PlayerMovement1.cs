@@ -42,6 +42,8 @@ public class PlayerMovement1 : MonoBehaviour
             {
                 if (!Physics2D.OverlapCircle(MovePoint.transform.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, whatStopsMovement))
                 {
+                    MovePoint.transform.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+
                     if (Input.GetAxisRaw("Vertical") < 0f)
                     {
                         //PM.RotateDown();
@@ -50,8 +52,6 @@ public class PlayerMovement1 : MonoBehaviour
                     {
                         //PM.RotateUp();
                     }
-
-                    MovePoint.transform.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                 }
             }
         }
