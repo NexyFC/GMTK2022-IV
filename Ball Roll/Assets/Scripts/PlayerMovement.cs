@@ -17,24 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveDown()
     {
-            if (presetSprite == m_six)
-            {
-                sp.sprite = m_four;
-            }
-            if (presetSprite == m_four)
-            {
-                sp.sprite = m_one;
-            }
 
-            if (presetSprite == m_one)
-            {
-                sp.sprite = m_three;
-            }
-
-            if (presetSprite == m_three)
-            {
-                sp.sprite = m_six;
-            }
     }
     public void MoveUp()
     {
