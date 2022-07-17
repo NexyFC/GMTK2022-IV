@@ -130,22 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1067156868575125463, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
-      propertyPath: m_Size.x
-      value: 0.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1067156868575125463, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
-      propertyPath: m_Size.y
-      value: 0.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1067156868575125463, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
-      propertyPath: m_Sprite
+    - target: {fileID: 2531937, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
+      propertyPath: MovePoint
       value: 
-      objectReference: {fileID: 21300000, guid: 98ff3aed9b9871a4398f25df05583fe1, type: 3}
-    - target: {fileID: 1067156868575125463, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 941161161}
+    - target: {fileID: 2531938, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
+      propertyPath: Dice1
+      value: 
+      objectReference: {fileID: 21300000, guid: a60f5121eedc165468921486e6d07157, type: 3}
     - target: {fileID: 1163440931089280214, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -153,18 +145,6 @@ PrefabInstance:
     - target: {fileID: 4681312767077661666, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
       propertyPath: m_RootOrder
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4681312767077661666, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4681312767077661666, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4681312767077661666, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4681312767077661666, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -208,51 +188,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
---- !u!1 &2531935 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1163440931089280214, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
-  m_PrefabInstance: {fileID: 2531934}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2531936 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4681312767077661666, guid: 9a9780a10fecbba49b054aa6f6e5b99c, type: 3}
-  m_PrefabInstance: {fileID: 2531934}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2531937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2531935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543a84ee46e28fa46bc8cc087384cac3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovePoint: {fileID: 941161161}
-  movespeed: 2.5
-  whatStopsMovement:
-    serializedVersion: 2
-    m_Bits: 128
---- !u!114 &2531938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2531935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42169211060ffcd46905704e7d0b3586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dice1: {fileID: 21300000, guid: aa5dd689ed6c43c47bd2c71eb4e85356, type: 3}
-  Dice2: {fileID: 21300000, guid: 7decd59445365134fb66883a37fdb424, type: 3}
-  Dice3: {fileID: 21300000, guid: 12687777e3a177d42bb9c9ed79bc5060, type: 3}
-  Dice4: {fileID: 21300000, guid: 7dd37214facf0204e851cac6e5b11ca3, type: 3}
-  Dice5: {fileID: 21300000, guid: 98ff3aed9b9871a4398f25df05583fe1, type: 3}
-  Dice6: {fileID: 21300000, guid: dc9fd10ac1553754ca0d48f07f9f3038, type: 3}
 --- !u!1 &156168547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,117 +1575,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &954641589
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 954641590}
-  - component: {fileID: 954641591}
-  m_Layer: 0
-  m_Name: Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &954641590
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954641589}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0046666665, y: 0.015113513, z: 0}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2531936}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &954641591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954641589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ComponentVersion: 1
-  m_LightType: 3
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.796
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeIntensity: 1
-  m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
-  m_LightCookieSprite: {fileID: 0}
-  m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_OverlapOperation: 0
-  m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
-  m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
-  m_ShadowVolumeIntensityEnabled: 0
-  m_ShadowVolumeIntensity: 0.75
-  m_Vertices:
-  - position: {x: 0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0.70710677, g: 0.70710677, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.9985302, y: 0.9985302, z: 0}
-    color: {r: -0.70710677, g: 0.70710677, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.99853003, y: -0.9985304, z: 0}
-    color: {r: -0.70710665, g: -0.7071069, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0.70710665, g: -0.7071069, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: 0, y: 0, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  m_Triangles: 030001000800020000000100030002000100050003000800040002000300050004000300070005000800060004000500070006000500010007000800000006000700010000000700
-  m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 360.00006
-  m_PointLightOuterAngle: 360.00006
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &1035387919
 GameObject:
   m_ObjectHideFlags: 0
