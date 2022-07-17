@@ -196,6 +196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3548698984641855202, guid: df1bb9a640635884a9b1672d43820df8, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3548698984641855203, guid: df1bb9a640635884a9b1672d43820df8, type: 3}
       propertyPath: MovePoint
       value: 
