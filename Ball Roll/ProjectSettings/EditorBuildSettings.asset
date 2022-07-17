@@ -14,9 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/NewScripts/Levels/Level1.unity
     guid: 5d10eaff82c0b1a47b593260654ffbdd
-  - enabled: 1
-    path: Assets/NewScripts/Levels/Level2.unity
-    guid: a475ada3b957f6d4db33e3ee65f81903
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/NewScripts/Levels/Level3.unity
     guid: 01dc61344617bf04c874b6f13d4bba5b
