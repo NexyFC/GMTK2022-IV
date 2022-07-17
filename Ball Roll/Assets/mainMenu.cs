@@ -62,4 +62,5 @@ public class mainMenu : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
+
 }
