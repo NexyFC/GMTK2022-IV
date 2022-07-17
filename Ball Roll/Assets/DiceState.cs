@@ -7,7 +7,7 @@ public class DiceState
     public int value;
 
     // [Up, Down, Left, Right]
-    int[] values;
+    public int[] values;
 
     // Indexes for the next states. Eg. when rolling up, the next state is the one under index upStateIndex.  
     public int upStateIndex;
@@ -29,7 +29,7 @@ public class DiceState
 public class Dice
 {
     private static List<DiceState> states;
-    private int currentStateIndex;
+    public int currentStateIndex;
 
     public Dice()
     {
@@ -68,6 +68,11 @@ public class Dice
 
 
         };
+    }
+
+    public int getIndex()
+    {
+        return currentStateIndex;
     }
 
     public int getValue()
