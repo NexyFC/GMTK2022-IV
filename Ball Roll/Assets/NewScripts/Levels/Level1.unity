@@ -1029,6 +1029,7 @@ GameObject:
   - component: {fileID: 943248239}
   - component: {fileID: 943248241}
   - component: {fileID: 943248240}
+  - component: {fileID: 943248242}
   m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
@@ -1461,6 +1462,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &943248242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943248238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2459db081aa109448ddb5dd2b47da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &988385630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471724690539824216, guid: 5ef0ebd7571b28c4283b9da1d94d9c0a, type: 3}
