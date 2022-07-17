@@ -12,7 +12,6 @@ public class WinTile : MonoBehaviour
 
     private void Win()
     {
-        //Load next scene or exit to the menu
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);//Loads Menu
     }
 }
