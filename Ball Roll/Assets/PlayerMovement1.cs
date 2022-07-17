@@ -8,10 +8,12 @@ public class PlayerMovement1 : MonoBehaviour
     [SerializeField] float movespeed = 3f;
     public LayerMask whatStopsMovement;
     private PlayerMovement PM;
+    private CountingMoves CM;
 
     private void Awake()
     {
         PM = GetComponent<PlayerMovement>();
+        CM = GetComponent<CountingMoves>();
     }
 
     private void Update()
@@ -29,10 +31,12 @@ public class PlayerMovement1 : MonoBehaviour
                     if (Input.GetAxisRaw("Horizontal") > 0f)
                     {
                         PM.GoRIght();
+                        CM.Moved();
                     }
                     else if (Input.GetAxisRaw("Horizontal") < 0f)
                     {
                         PM.GoLeft();
+                        CM.Moved();
                     }
                 }
             }
@@ -43,10 +47,12 @@ public class PlayerMovement1 : MonoBehaviour
                     if (Input.GetAxisRaw("Vertical") < 0f)
                     {
                         PM.GoDown();
+                        CM.Moved();
                     }
                     else if (Input.GetAxisRaw("Vertical") > 0f)
                     {
                         PM.GoUp();
+                        CM.Moved();
                     }
 
                     MovePoint.transform.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);

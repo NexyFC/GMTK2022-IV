@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Sprite Dice5;
     [SerializeField] Sprite Dice6;
 
+    public int CurrentDice = 0;
+
     private List<Sprite> SpriteList;
 
     private SpriteRenderer SR;
@@ -26,22 +28,25 @@ public class PlayerMovement : MonoBehaviour
     {
         dice.RollDown();
         SR.sprite = SpriteList[dice.getValue() - 1];
-        SR.sprite = SpriteList[dice.getValue()-1];
+        CurrentDice = dice.getIndex();
     }
     public void GoUp()
     {
         dice.RollUp();
         SR.sprite = SpriteList[dice.getValue() - 1];
+        CurrentDice = dice.getIndex();
     }
     public void GoLeft()
     {
         dice.RollLeft();
         SR.sprite = SpriteList[dice.getValue() - 1];
+        CurrentDice = dice.getIndex();
     }
     public void GoRIght()
     {
         dice.RollRight();
         SR.sprite = SpriteList[dice.getValue() - 1];
+        CurrentDice = dice.getIndex();
     }
 
 }
