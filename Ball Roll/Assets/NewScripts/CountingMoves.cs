@@ -27,7 +27,7 @@ public class CountingMoves : MonoBehaviour
         {
             Ending = true;
         }
-        ST.text = "Remaining Moves: " + RemainingMoves.ToString();
+        ST.text = "REMANING MOVES: " + RemainingMoves.ToString();
     }
     public void Update()
     {
